@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+body{
+   background:#111; 
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+#memeImg{
+    overflow: hidden;
+    width: 700px;
+    height: 390px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: rgba(118, 118, 238, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(143, 190, 236, 0.35) 0px -2px 6px 0px inset;
+}
+
+.buttons{
+    padding-top: 3rem;
+    padding-left: 55px;
+}
+
+.btns{
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 2rem;
+    border: 1px solid white;
+    width: 150px;
+    margin-right: 50px;
+    font-weight: bolder;
+    background-color: rgb(97, 148, 148);
+    transition: all;
+    outline: none;
+    transition-duration: 0.1s;
+}
+.btns:hover{
+    background-color: rgb(132, 201, 201);
+    font-size: 1.9rem;
+}
+.btn:focus{
+    border: none;
+}
+
+#popUp{
+    position: fixed;
+    visibility: hidden;
+    top: 15rem;
+    z-index: 100;
+}
+
+#image{
+    width: 700px;
+    height: 390px;
+    object-fit: contain;
+}
+
+#input{
+    position: fixed;
+    top: 10px;
+    visibility: hidden;
+}
+
+header{
+    text-align: center;
+    color: rgb(0, 95, 95);
+
+    margin-top: 1rem;
+}
